@@ -1,1 +1,455 @@
-/* место для вашего кода */
+.content-section {
+  width: 1440px;
+  margin: auto;
+}
+
+.header {
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 92px;
+  padding-left: 51px;
+  padding-right: 49px;
+  margin-bottom: 92px;
+}
+
+/* контейнер навигации */
+.header__menu {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* контейнер списка ссылок в шапке */
+.header__menu-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 31px;
+}
+
+/* пункт списка ссылок */
+.header__menu-list-item {
+  list-style: circle outside;
+}
+
+/* ссылка без кружочка перед ней */
+.header__menu-list-item_no-bullit {
+  list-style: none;
+}
+
+/* ссылка общая, увеличили отступ линии */
+.header__menu-link {
+  text-underline-offset: 20%;
+  text-decoration-thickness: 1px;
+}
+
+/* активная ссылка */
+.header__menu-link_active {
+  text-decoration: none;
+}
+
+/* контейнер логотипа в шапке*/
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* картинка с логотипом */
+.header__logo-image {
+  height: 100%;
+  max-width: 148px;
+  max-height: 105px;
+}
+
+/* контейнер с адресом */
+.address {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  display: flex;
+  flex-direction: column;
+  text-underline-offset: 24%;
+}
+
+.address a {
+  text-decoration-thickness: 1px;
+}
+
+/* выравнивание адреса в шапке */
+.header__address {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 4px;
+}
+
+/* main {
+  background-color: blue;
+} */
+
+/* для затемнения */
+.overlay {
+  opacity: 0.6;
+  background: #000;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* первая секция */
+.cover {
+  height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-color: rgb(135, 135, 135);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 180px;
+}
+
+/* заголовок */
+.cover__title {
+  width: 100%;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 115%;
+  text-transform: uppercase;
+  margin: auto;
+  z-index: 2;
+}
+
+/* для выравнивания строк текста заголовка по вертикали */
+.aligned-text_left {
+  display: block;
+  height: 115px;
+  padding-top: 11px;
+  padding-left: 50px;
+  letter-spacing: 30px;
+}
+
+.aligned-text_center {
+  display: block;
+  height: 115px;
+  text-align: center;
+  letter-spacing: 30px;
+  padding-right: 29px;
+  padding-top: 22px;
+}
+
+.aligned-text_right {
+  display: block;
+  height: 115px;
+  text-align: right;
+  letter-spacing: 30px;
+  padding-top: 28px;
+  padding-right: 50px;
+}
+
+/* управление межбуквенным расстоянием */
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+/* для обнуления межбуквенного расстояния для последней буквы */
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+/* контейнер для подзаголовка и кнопки */
+.cover__description {
+  display: flex;
+  gap: 78px;
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 3;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+/* текст подзаголовка */
+.cover__description-text {
+  word-spacing: 18px;
+  text-align: right;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* кнопка Сделать ставку */
+.bet-button {
+  width: 257px;
+  height: 52px;
+  padding: 0;
+  border: 1px solid;
+  color: inherit;
+  font: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+/* секция с карточками */
+.lots {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 181px;
+}
+
+/* заголовок секции */
+.lots__heading {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  height: 74px;
+  margin-left: 90px;
+}
+
+/* список карточек */
+.lots__card-list {
+  /* background-color: chartreuse; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  color: #fff;
+  margin-left: 50px;
+  margin-right: 50px;
+  min-height: 450px;
+}
+
+/* пункт списка карточки */
+.lots__card-list-item {
+  list-style: none;
+  display: flex;
+  width: 430px;
+  flex-basis: 430px;
+  flex-grow: 1;
+  height: auto;
+  position: relative;
+}
+
+/* ссылка, обрамляющая карточку */
+.card-link {
+  padding: 50px 40px;
+  z-index: 2;
+}
+
+/* карточка */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* фоны карточек */
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-color: rgb(135, 135, 135);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-color: rgb(135, 135, 135);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-color: rgb(135, 135, 135);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+/* заголовок карточки */
+.card__title {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-decoration-line: underline;
+  text-underline-offset: 12%;
+  text-decoration-thickness: 1px;
+}
+
+/* текст карточки */
+.card__text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+/* ссылка больше */
+.lots__look-more-link {
+  height: 55px;
+  padding-left: 90px;
+  padding-top: 30px;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-underline-offset: 22%;
+  text-decoration-thickness: 1px;
+}
+
+/* убираем подчеркивание для ссылок в карточках */
+.lots__card-list-item a {
+  text-decoration: none;
+}
+
+/* секция об аукционе */
+.about {
+  /* background-color: coral; */
+  display: grid;
+  grid-template-columns: 430px auto;
+  gap: 25px;
+  height: 487px;
+  margin: 0 50px 180px;
+}
+
+/* класс для колонки с лого*/
+.about__column-logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* контейнер с логотипом */
+.about__logo {
+  width: 240px;
+  height: 240px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* изображение логотипа */
+.about__logo-image {
+  background-image: url(../images/logo-white.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 148px;
+  height: 114px;
+}
+
+/* заголовок секции */
+.about__title {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* блок для текстов секции */
+.about__text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* отступ только для первого абзаца */
+.about__text:first-of-type {
+  margin-bottom: 26px;
+}
+
+/* подвал */
+.footer {
+  /* background-color: gold; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 90px;
+}
+
+/* блок навигации по списку ссылок */
+.footer__menu {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* список пунктов меню */
+.footer__menu-list {
+  text-align: center;
+}
+
+/* пункт списка меню */
+.footer__menu-list-item {
+  list-style: none;
+  text-underline-offset: 20%;
+}
+
+.footer__menu-list-item a {
+  text-decoration-thickness: 1px;
+}
+
+/* активная ссылка меню */
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+/* список ссылок на социальные сети */
+.footer__social-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 48px;
+}
+
+/* пункт списка ссылок на социальные сети */
+.footer__social-list-item {
+  list-style: none;
+}
+
+/* ссылка на социальные сети */
+.footer__social-link {
+}
+
+/* footer__social-icon */
+.footer__social-icon {
+  height: 48px;
+  width: 48px;
+}
