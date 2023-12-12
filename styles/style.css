@@ -122,7 +122,7 @@
   margin: auto;
   z-index: 2;
   padding-top: 165px;
-  padding-bottom: 237px;
+  padding-bottom: 135px;
 }
 
 /* для выравнивания строк текста заголовка */
@@ -171,12 +171,7 @@
   text-transform: uppercase;
   z-index: 3;
   align-items: center;
-  position: absolute;
-  width: auto;
-  height: auto;
-  left: 0;
-  right: 0;
-  bottom: 50px;
+  padding-bottom: 50px;
 }
 
 /* текст подзаголовка */
